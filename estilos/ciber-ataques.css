@@ -1,0 +1,185 @@
+.slider img[src="assets/images/cubo.png"] {
+  animation: wheel-spin 4s linear infinite;
+  /* Aplica la animación */
+  animation-delay: 5s;
+  /* Espera 5 segundos antes de reiniciar la animación */
+}
+
+/* Animación tipo "rueda" */
+@keyframes wheel-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    /* Giro completo */
+  }
+}
+
+.tutulo-ciberataque {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f7f5f1;
+}
+
+.definicion-ciberataque {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.imagen-lado-izquierdo {
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.imagen-lado-izquierdo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.imagen-lado-izquierdo img:hover {
+  transform: scale(1.05);
+}
+
+.texto-ciberataque {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #f7f5f1;
+  line-height: 1.2;
+}
+
+.titulo-tiposAtaques {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffce06;
+}
+
+.tiposAtaques {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.imagantiposAtaques {
+
+
+  overflow: hidden;
+
+}
+
+.imagantiposAtaques img {
+  max-width: 100%;
+  /* Ajusta el tamaño de la imagen al contenedor sin perder proporción */
+  height: auto;
+  /* Asegura que la imagen mantenga su proporción */
+  display: block;
+  /* Centra la imagen */
+  transition: transform 0.5s ease;
+  margin: 0 auto;
+
+}
+
+.textotiposAtaques {
+  max-width: 100%; /* Ancho máximo del texto */
+  text-align: left;
+  color: rgb(249, 244, 244);
+  font-size: 1.5rem;
+  padding: 15px;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+
+}
+
+.textotiposAtaques p strong {
+  color: #ffce06;
+}
+
+
+.titulo-que-hacer {
+  text-align: center;
+  color: #0ade58;
+  font-size: 2.5rem;
+}
+
+.texto-quehacer {
+  margin: 20px;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%; /* Ancho máximo del texto */
+  text-align: left;
+  color: rgb(249, 244, 244);
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 8px;
+
+}
+
+.texto-quehacer p strong {
+  color: #0ade58;
+}
+
+.texto-quehacer ul {
+  color: #0ade58;
+}
+
+/* Responsividad para tabletas y dispositivos móviles */
+@media (max-width: 850px) {
+
+  .tutulo-ciberataque {
+    font-size: 2rem;
+  }
+
+  .definicion-ciberataque {
+    display: block;
+    align-items: center;
+    justify-content: space-between center;
+
+
+  }
+
+  .imagen-lado-izquierdo {
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .texto-ciberataque {
+    flex: 1;
+    max-width: 100%;
+    font-size: 1.2rem;
+
+  }
+  .titulo-tiposAtaques{
+    font-size: 2rem;
+  }
+  .textotiposAtaques{
+    font-size: 1.2rem;
+  }
+  .titulo-que-hacer{
+    font-size: 2rem;
+  }
+  .texto-quehacer{
+    font-size: 1.2rem;
+  }
+
+}

@@ -1,0 +1,87 @@
+.titulo-prevencion {
+  color: aquamarine;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.texto-ciberprevencion {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+}
+
+.imagen-ciberprevencion {
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.imagen-ciberprevencion img {
+  max-width: 100%;
+  /* Ajusta el tamaño de la imagen al contenedor sin perder proporción */
+  height: auto;
+  /* Asegura que la imagen mantenga su proporción */
+  display: block;
+  margin: 0 auto;
+  /* Centra la imagen */
+  height: auto;
+  object-fit: cover;
+  /* Asegura que la imagen de fondo cubra todo sin deformarse */
+  transition: transform 0.5s ease;
+}
+
+.imagen-ciberprevencion img:hover{
+  transform: scale(1.1);
+}
+
+
+
+.parrafos-prevenciones {
+  max-width: 100%; /* Ancho máximo del texto */
+  text-align: left;
+  
+  font-size: 1.5rem;
+  padding: 15px;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parrafos-prevenciones p{
+  color: rgb(249, 244, 244);
+}
+
+.parrafos-prevenciones p strong {
+  color: aquamarine;
+}
+.varios{
+  list-style-type:'✓ ';
+  color: rgb(249, 244, 244);
+  
+ 
+}
+
+.varios li::marker{
+  font-size: 1.5rem;
+  color: aquamarine;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .titulo-prevencion{
+    font-size: 2rem;
+  }
+  .parrafos-prevenciones {
+      font-size: 1.2rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+}

@@ -1,0 +1,437 @@
+/*
+  body {
+  margin: 0;
+  height: 100vh;
+  
+  background-image: url('/assets/images/color.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;  
+  */
+
+
+
+body {
+  margin: 0;
+  top: 0;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.navbar {
+  
+  background: radial-gradient(circle at 50% 50%, #040c21, #000000);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+
+}
+
+
+/* Para la barra de navegación */
+.nav-list a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  /* Necesario para posicionar la línea */
+}
+
+.nav-list a:hover {
+  color: rgb(236, 172, 12);
+}
+
+.nav-list a.active {
+  color: rgb(236, 172, 12);
+  /* Cambia el color del texto */
+}
+
+
+.nav-list a:hover::after {
+  color: rgb(236, 172, 12);
+  content: '';
+  /* Crea una pseudoelemento vacío para la línea */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  /* Grosor de la línea */
+  background-color: rgb(236, 172, 12);
+  /* Color de la línea */
+  transition: width 0.3s ease-in-out;
+  /* Añade una transición suave */
+}
+
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  /* Línea inicial (invisible) */
+  height: 2px;
+  background-color: rgb(236, 172, 12);
+  transition: width 0.3s ease-in-out;
+}
+
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.fondoSlider {
+  margin: 0;
+  position: relative;
+  /* Posiciona los hijos en relación a este contenedor */
+  width: 100%;
+  /* Ocupa todo el ancho */
+  overflow: hidden;
+  /* Oculta cualquier desbordamiento */
+
+}
+
+.fondoSlider img {
+
+
+  width: 100%;
+  /* Ocupa todo el ancho */
+  height: auto;
+  object-fit: cover;
+  /* Asegura que la imagen de fondo cubra todo sin deformarse */
+
+
+}
+
+.slider {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 25%;
+  padding-right: 25%;
+  /* Asegura que los elementos del slider estén sobre el fondo */
+  display: flex;
+  height: 100%;
+  /* Coincide con la altura del contenedor padre */
+  width: auto;
+  /* Ocupa todo el ancho */
+  justify-content: space-between center;
+
+}
+
+.slider img {
+  flex-direction: 1;
+  overflow: hidden;
+  /* Evita desbordamientos */
+  height: auto;
+  object-fit: contain;
+  /* Mantiene las proporciones originales */
+}
+
+.slider img[src="assets/images/escudo.png"] {
+  animation: spin-horizontal 5s linear forwards;
+  animation-delay: 5s;
+  /* Espera 5 segundos antes de reiniciar la animación */
+}
+
+@keyframes spin-horizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.titulo {
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  font-size: 2.5rem;
+  
+  color: aliceblue;
+  text-align: center;
+
+}
+
+.ciberseguridad {
+  text-align: center;
+
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.titulo-ciber {
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.ciberseguridad p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  color: aliceblue;
+  font-size: 2rem;
+
+}
+
+.manosRobot {
+  margin: 0;
+  position: relative;
+  /* Posiciona los hijos en relación a este contenedor */
+  width: 100%;
+  /* Ocupa todo el ancho */
+  overflow: hidden;
+  /* Oculta cualquier desbordamiento */
+
+}
+
+.manosRobot img {
+  width: 100%;
+  /* Ocupa todo el ancho */
+  height: auto;
+  object-fit: cover;
+  /* Asegura que la imagen de fondo cubra todo sin deformarse */
+}
+
+
+.targetas-variedad-funcion {
+  margin-top: -30px;
+  text-align: center;
+  color: aliceblue;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+
+}
+
+.targeta-variedad {
+  margin: 20px;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.targeta-variedad h1 {
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.targeta-variedad p {
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.targeta-variedad p strong {
+  color: #0ade58;
+}
+
+.targeta-funcion {
+  margin: 20px;
+  padding: 20px;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.targeta-funcion h1 {
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.targeta-funcion ul {
+  text-align: left;
+  color: aliceblue;
+  font-size: 2rem;
+  
+}
+
+.targeta-funcion ul li::marker {
+  color: #0ade58;
+
+}
+
+.titulo-tipos-ataques {
+  margin: 20px;
+  top: 0;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 2.5rem;
+  background: radial-gradient(circle at 50% 50%, #34446b, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffce06;
+  text-align: center;
+}
+
+.tipos-de-ataques {
+  text-align: center;
+  /* Centra el texto dentro del div */
+  gap: 20px;
+  top: 0px;
+  left: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Asegura que los elementos del slider estén sobre el fondo */
+  display: flex;
+  height: 100%;
+  /* Coincide con la altura del contenedor padre */
+  width: auto;
+  /* Ocupa todo el ancho */
+  justify-content: space-between center;
+}
+
+.tipos-de-ataques img {
+  border-radius: 8px;
+  flex-direction: 1;
+  overflow: hidden;
+  /* Evita desbordamientos */
+  height: auto;
+  object-fit: contain;
+  /* Mantiene las proporciones originales */
+}
+
+
+
+/* Responsividad para tabletas y dispositivos móviles */
+@media (max-width: 850px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between center;
+    height: auto;
+
+  }
+
+
+
+  .logo {
+    margin-bottom: 60px;
+  }
+
+  
+
+  .nav-list a {
+    margin-top: 0px;
+    font-size: 1rem;
+    padding: 2px;
+    margin-left: 10px;
+    
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 150px;
+    display: none;
+    font-size: 20px;
+    top: 20px;
+    /* Ajusta según el alto del navbar */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    padding: 2px;
+    position: absolute;
+    border-radius: 5px;
+    /* Esconde el menú por defecto en móviles */
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+
+  .nav-list.active {
+    display: flex;
+
+  }
+
+  /* Botón hamburguesa */
+  .menu-btn {
+
+    margin-top: -100px;
+    display: block;
+    cursor: pointer;
+
+  }
+
+  /* Mostrar menú al hacer clic */
+  .menu-btn.active+.nav-list {
+    display: flow-root;
+
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .titulo-ciber {
+    font-size: 2rem;
+
+  }
+
+  .ciberseguridad p {
+    font-size: 1.5rem;
+  }
+
+  .targeta-variedad h1 {
+    font-size: 2rem;
+  }
+
+  .targeta-variedad p {
+    font-size: 1.5rem;
+  }
+
+  .targeta-funcion h1 {
+    font-size: 2rem;
+  }
+
+  .targeta-funcion ul {
+    font-size: 1.5rem;
+    
+  }
+
+  .tipos-de-ataques {
+    display: block;
+  }
+
+  .tipos-de-ataques img {  
+    width: 100%;  
+  }
+  .titulo-tipos-ataques {
+    font-size: 2rem;
+  }
+
+
+}
